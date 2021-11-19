@@ -1,5 +1,5 @@
 var LoginComo = "NaoLogado"
 
-function E() {
+function ValidarLogin() {
 
 }
