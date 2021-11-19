@@ -75,6 +75,9 @@ public class ConsumidorResource {
         if(consumidor.Cidade.equals("")){
             throw new BadRequestException("Cidade é obrigatório");
         }
+        if(consumidor.Senha.equals("")){
+            throw new BadRequestException("Senha é obrigatório");
+        }
 
         consumidor.persist();
         return Response.status(Status.CREATED).entity(consumidor).build();
@@ -98,7 +101,8 @@ public class ConsumidorResource {
         entity.Celular = consumidor.Celular;
         entity.CEP = consumidor.CEP;
         entity.Estado = consumidor.Estado;
-        entity.Cidade = consumidor.Cidade;        
+        entity.Cidade = consumidor.Cidade;     
+        entity.Senha = consumidor.Senha;   
 
         entity.persist();
 
