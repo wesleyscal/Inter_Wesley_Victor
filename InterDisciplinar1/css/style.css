@@ -836,6 +836,67 @@ footer img {
   font-size: 18px;
 }
 
+.btn-reclamar a button {
+  margin-left: 45%;
+  position: absolute;
+  bottom: 10%;
+  width: 20%;
+  height: 10%;
+  background-color: #2d52ca;
+  color: white;
+  border-radius: 30px;
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-reclamar a button:hover {
+  background-color: #183baf;
+}
+
+.realizar-reclamacao label {
+  margin-left: 40%;
+  margin-top: 15%;
+}
+
+.realizar-reclamacao input[type="text"] {
+  margin-left: 40%;
+  width: 30%;
+  padding: 5px;
+  outline: none;
+}
+
+.realizar-reclamacao p {
+  margin-left: 40%;
+  margin-top: 2%;
+}
+
+.realizar-reclamacao textarea {
+  margin-left: 40%;
+  margin-top: 2%;
+  width: 30%;
+  padding: 10px 20px 250px 10px;
+  outline: none;
+  resize: none;
+}
+
+.realizar-reclamacao .btn-FinalizarReclamacao {
+  margin-left: 50%;
+  width: 10%;
+  padding: 7px;
+  border: 0;
+  border-radius: 40px;
+  background-color: #183baf;
+  color: white;
+  display: block;
+  outline: none;
+  margin-bottom: -10%;
+}
+
+.realizar-reclamacao .btn-FinalizarReclamacao:hover {
+  background-color: #2a4cbe;
+}
+
 @media screen and (max-width: 1050px) {
   .barra-pesquisa input[type="text"],
   .barra-pesquisa img,
