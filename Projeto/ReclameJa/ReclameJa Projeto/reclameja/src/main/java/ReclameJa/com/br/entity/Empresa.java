@@ -14,8 +14,6 @@ public class Empresa extends PanacheEntity{
     public String Pais;
     public String Estado;
     public String Cidade;
-    public String Senha;
-
 
     public static List<Empresa> findByName(String Nome_Fantasia){
         return find("Nome_Fantasia", Nome_Fantasia).list();

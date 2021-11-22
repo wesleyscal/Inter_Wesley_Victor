@@ -9,4 +9,11 @@ function cadastrar(){
     consumidor.Estado = document.getElementById("input-estado").value;
     consumidor.Cidade = document.getElementById("input-cidade").value;
 
+    axios.post("http://localhost:8080/consumidor", consumidor)
+    .then(function (response) {
+        alert("Cadastro realizado com sucesso");
+    })
+    .catch(function (error) {
+        alert("Erro: " + error);
+    });    
 }

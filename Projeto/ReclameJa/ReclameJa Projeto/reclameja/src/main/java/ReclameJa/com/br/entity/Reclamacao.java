@@ -12,7 +12,6 @@ public class Reclamacao extends PanacheEntity{
     public String Descricao;
     public Date Data_Abertura;
     public Date Data_Finalizacao;
-    public Integer nota;
     public int id_Consumidor;
     public int id_Empresa;
 

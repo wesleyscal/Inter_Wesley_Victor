@@ -72,9 +72,6 @@ public class EmpresaResource {
         if(empresa.Cidade.equals("")){
             throw new BadRequestException("Cidade é obrigatório");
         }
-        if(empresa.Senha.equals("")){
-            throw new BadRequestException("Senha é obrigatório");
-        }
 
         empresa.persist();
         return Response.status(Status.CREATED).entity(empresa).build();
@@ -98,7 +95,6 @@ public class EmpresaResource {
         entity.Pais = empresa.Pais;
         entity.Estado = empresa.Estado;
         entity.Cidade = empresa.Cidade;   
-        entity.Senha = empresa.Senha;    
 
         entity.persist();
 

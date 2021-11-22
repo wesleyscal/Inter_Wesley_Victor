@@ -79,7 +79,6 @@ public class ReclamacaoResource {
         entity.Descricao = reclamacao.Descricao;
         entity.Data_Abertura = reclamacao.Data_Abertura;
         entity.Data_Finalizacao = reclamacao.Data_Finalizacao;
-        entity.nota = reclamacao.nota;
         entity.id_Consumidor = reclamacao.id_Consumidor;
         entity.id_Empresa = reclamacao.id_Empresa;        
 

@@ -20,9 +20,6 @@ public class Consumidor extends PanacheEntity{
     public String Estado;
     public String Cidade;
 
-    
-    public String Senha;
-
     public static List<Consumidor> findByName(String Nome_Completo){
         return find("Nome_Completo", Nome_Completo).list();
     }
